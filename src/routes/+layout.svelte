@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	let { children }: { children: Snippet } = $props();
+
+	import '@fontsource-variable/inter';
 </script>
 
 <main>
@@ -9,6 +11,6 @@
 
 <style>
 	main {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		font-family: 'Inter Variable', sans-serif;
 	}
 </style>
