@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+
 	const img = $derived.by(() => {
 		const obj = import.meta.glob('$lib/assets/imgs/*', {
 			import: 'default',
@@ -10,12 +12,16 @@
 	});
 </script>
 
-{#if img}
-	<img src={img} alt="ill" />
+{#if browser}
+	<img src={img} alt="bilde" />
 {/if}
 
 <style>
 	img {
 		max-width: 100%;
+		min-width: 100%;
+		height: 100%;
+		max-height: 300px;
+		object-fit: cover;
 	}
 </style>

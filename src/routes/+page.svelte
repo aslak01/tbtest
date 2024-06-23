@@ -1,7 +1,17 @@
 <script lang="ts">
-	import Title from './Title.svelte';
-	import RandomImg from './RandomImg.svelte';
+	import Row from './Row.svelte';
+	const rows = Array.from({ length: 10 });
 </script>
 
-<RandomImg></RandomImg>
-<Title>This is a headline without spans</Title>
+<div class="page">
+	{#each rows as _row}
+		<Row />
+	{/each}
+</div>
+
+<style>
+	.page {
+		display: flex;
+		flex-direction: column;
+	}
+</style>

@@ -13,8 +13,14 @@
 </article>
 
 <style>
-	article {
-		max-width: 480px;
+	/* article { */
+	/* 	max-width: 480px; */
+	/* } */
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
 	}
 	a,
 	a:hover {
@@ -22,9 +28,10 @@
 	}
 	h2 {
 		margin: 0;
-		font-size: 7ch;
+		font-size: 6ch;
 		font-weight: 900;
 		hyphens: auto;
+		-webkit-hyphens: auto;
 		line-height: 1;
 	}
 </style>
